@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  iOS_TextEditor
 //
-//  Created by Shimaa Elcc on 23.1.2024.
+//  Created by Heba Elcc on 23.1.2024.
 //
 
 import UIKit
