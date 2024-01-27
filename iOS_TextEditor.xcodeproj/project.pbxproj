@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450C84672B63C1B2002F2CDB /* MarkdownRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C84662B63C1B1002F2CDB /* MarkdownRenderer.swift */; };
+		45B91FFF2B6242F800D13C66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B91FFE2B6242F800D13C66 /* Extensions.swift */; };
 		45D0B63D2B5F30EC00B84BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0B63C2B5F30EC00B84BD7 /* AppDelegate.swift */; };
 		45D0B63F2B5F30EC00B84BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0B63E2B5F30EC00B84BD7 /* SceneDelegate.swift */; };
 		45D0B6412B5F30EC00B84BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D0B6402B5F30EC00B84BD7 /* ViewController.swift */; };
@@ -14,9 +16,12 @@
 		45D0B6472B5F30EC00B84BD7 /* iOS_TextEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45D0B6452B5F30EC00B84BD7 /* iOS_TextEditor.xcdatamodeld */; };
 		45D0B6492B5F30EE00B84BD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D0B6482B5F30EE00B84BD7 /* Assets.xcassets */; };
 		45D0B64C2B5F30EE00B84BD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D0B64A2B5F30EE00B84BD7 /* LaunchScreen.storyboard */; };
+		45DF32D52B61E0CC00636B0D /* NSAttributedStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DF32D42B61E0CC00636B0D /* NSAttributedStringHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450C84662B63C1B1002F2CDB /* MarkdownRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownRenderer.swift; sourceTree = "<group>"; };
+		45B91FFE2B6242F800D13C66 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		45D0B6392B5F30EC00B84BD7 /* iOS_TextEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_TextEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D0B63C2B5F30EC00B84BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45D0B63E2B5F30EC00B84BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		45D0B6482B5F30EE00B84BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D0B64B2B5F30EE00B84BD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45D0B64D2B5F30EE00B84BD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45DF32D42B61E0CC00636B0D /* NSAttributedStringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				45D0B64A2B5F30EE00B84BD7 /* LaunchScreen.storyboard */,
 				45D0B64D2B5F30EE00B84BD7 /* Info.plist */,
 				45D0B6452B5F30EC00B84BD7 /* iOS_TextEditor.xcdatamodeld */,
+				45DF32D42B61E0CC00636B0D /* NSAttributedStringHelper.swift */,
+				45B91FFE2B6242F800D13C66 /* Extensions.swift */,
+				450C84662B63C1B1002F2CDB /* MarkdownRenderer.swift */,
 			);
 			path = iOS_TextEditor;
 			sourceTree = "<group>";
@@ -142,9 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D0B6412B5F30EC00B84BD7 /* ViewController.swift in Sources */,
+				450C84672B63C1B2002F2CDB /* MarkdownRenderer.swift in Sources */,
+				45B91FFF2B6242F800D13C66 /* Extensions.swift in Sources */,
 				45D0B6472B5F30EC00B84BD7 /* iOS_TextEditor.xcdatamodeld in Sources */,
 				45D0B63D2B5F30EC00B84BD7 /* AppDelegate.swift in Sources */,
 				45D0B63F2B5F30EC00B84BD7 /* SceneDelegate.swift in Sources */,
+				45DF32D52B61E0CC00636B0D /* NSAttributedStringHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +219,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -270,7 +282,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -299,17 +311,21 @@
 				DEVELOPMENT_TEAM = T96JD555QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS_TextEditor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuickNotes;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ur application needs permission to access your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nomadstory.nomadstory.iOS-TextEditor";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nomadstory.nomadstory.iOS-TextEditorr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,17 +343,21 @@
 				DEVELOPMENT_TEAM = T96JD555QP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS_TextEditor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuickNotes;
+				INFOPLIST_KEY_NSCameraUsageDescription = "ur application needs permission to access your photos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nomadstory.nomadstory.iOS-TextEditor";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nomadstory.nomadstory.iOS-TextEditorr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
